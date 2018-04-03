@@ -1,0 +1,71 @@
+{
+    "count": 1, 
+    "next": null, 
+    "previous": null, 
+    "results": [
+{
+    "terrestrial_date": "2018-04-01", 
+    "sol": 155, 
+    "ls": 243.7, 
+    "min_temp": -64.45, 
+    "max_temp": 2.15, 
+    "pressure": 9.175, 
+    "pressure_string": "Higher", 
+    "abs_humidity": null, 
+    "wind_speed": 2.0, 
+    "wind_direction": "E", 
+    "atmo_opacity": "Sunny", 
+    "season": "Month 9", 
+    "sunrise": "2018-04-01T12:00:00Z", 
+    "sunset": "2013-04-01T23:00:00Z"
+},
+{
+    "terrestrial_date": "2018-04-02", 
+    "sol": 156, 
+    "ls": 243.7, 
+    "min_temp": -84.45, 
+    "max_temp": 3.15, 
+    "pressure": 9.175, 
+    "pressure_string": "Higher", 
+    "abs_humidity": null, 
+    "wind_speed": 2.0, 
+    "wind_direction": "E", 
+    "atmo_opacity": "Sunny", 
+    "season": "Month 9", 
+    "sunrise": "2018-04-02T12:00:00Z", 
+    "sunset": "2013-04-02T23:00:00Z"
+},
+{
+    "terrestrial_date": "2018-04-03", 
+    "sol": 157, 
+    "ls": 243.7, 
+    "min_temp": -64.45, 
+    "max_temp": 2.15, 
+    "pressure": 9.175, 
+    "pressure_string": "Higher", 
+    "abs_humidity": null, 
+    "wind_speed": 2.0, 
+    "wind_direction": "E", 
+    "atmo_opacity": "Sunny", 
+    "season": "Month 9", 
+    "sunrise": "2018-04-03T12:00:00Z", 
+    "sunset": "2013-04-03T23:00:00Z"
+},
+{
+    "terrestrial_date": "2018-04-04", 
+    "sol": 158, 
+    "ls": 243.7, 
+    "min_temp": -64.45, 
+    "max_temp": 2.15, 
+    "pressure": 9.175, 
+    "pressure_string": "Higher", 
+    "abs_humidity": null, 
+    "wind_speed": 2.0, 
+    "wind_direction": "E", 
+    "atmo_opacity": "Sunny", 
+    "season": "Month 9", 
+    "sunrise": "2018-04-04T12:00:00Z", 
+    "sunset": "2013-04-04T23:00:00Z"
+}
+    ]
+}
