@@ -23,7 +23,7 @@ Hint:
 Use a request parameter to accept the required date. eg. http://localhost:8080/index.html?earth_date=2016-01-04
 
 2. Update the application to show, below the weather report on the UI, all the images the Curiosity rover has taken on the specified date. 
-Use the live NASA imaging API (https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=yyyy-MM-dd&api_key=AOY1JmnKuMubwVpC2PpP0xtCwf4UaQLLZkG9PpB6) to get the list of images from the Mars rover on a specified date.
+Use the live NASA imaging API (https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2018-11-01&api_key=AOY1JmnKuMubwVpC2PpP0xtCwf4UaQLLZkG9PpB6) to get the list of images from the Mars rover on a specified date.
 Hint:
 Update the application's JSON report API to include links to the images.
 Update the UI to show the images.
