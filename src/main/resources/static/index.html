@@ -1,20 +1,45 @@
-<html>
-	<head>
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
-		<script src="curiosity.js"></script>
-		<link rel="stylesheet" href="curiosity.css"/>
-	</head>
-	<body>
-		<h1>Mars Report</h1>
-		<div id="weather">
-			<table>
-				<tr><td>Skies:</td><td id="weather-atmo-opacity"/></tr>
-				<tr><td>Max Temp (C):</td><td id="weather-max-temp"/></tr>
-				<tr><td>Min Temp (C):</td><td id="weather-min-temp"/></tr>
-				<tr><td>Wind Speed:</td><td id="weather-wind-speed"/></tr>
-				<tr><td>Earth Time:</td><td id="weather-terrestrial-date"/></tr>
-			</table>
-		</div>
-		<br/>
-	</body>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+	<link rel="stylesheet" href="curiosity.css"/>
+</head>
+<body>
+<div>
+	<span>The date can be informed by passing an URL query parameter, eg: </span><a href="http://localhost:8080/?date=2018-04-01">http://localhost:8080/?date=2018-04-01</a>
+</div>
+<div id="mars-report">
+	<h1>Mars Report</h1>
+	<div id="report-form">
+		<label for="report-date">Earth date (YYYY-MM-DD):</label><input id="report-date" v-model="date">
+		<button v-on:click="load">Load</button>
+	</div>
+	<table v-if="weather">
+		<tr><td>Skies:</td><td id="weather-atmo-opacity"/>{{weather.atmo_opacity}}</tr>
+		<tr><td>Max Temp (C):</td><td id="weather-max-temp"/>{{weather.max_temp}}</tr>
+		<tr><td>Min Temp (C):</td><td id="weather-min-temp"/>{{weather.min_temp}}</tr>
+		<tr><td>Wind Speed:</td><td id="weather-wind-speed"/>{{weather.wind_speed}}</tr>
+		<tr><td>Earth Time:</td><td id="weather-terrestrial-date"/>{{new Date(weather.terrestrial_date)}}</tr>
+	</table>
+</div>
+<div id="nasa-pic">
+	<h1>Nasa Mars Pictures</h1>
+  <div id="nasa-form">
+		<label for="nasa-date">Earth date (YYYY-MM-DD):</label><input id="nasa-date" v-model="date">
+		<button v-on:click="load">Load</button>
+	</div>
+	<div id="nasa-navigate-buttons">
+		<button v-on:click="previous">Previous</button>
+		<button v-on:click="next">Next</button>
+	</div>
+	<div v-if="photos.length > 0">
+		<img :src="photos[currentIdx].imgSrc" height="700px">
+		<p>Photo number {{currentIdx + 1}} of {{photos.length}}</p>
+	</div>
+  <div v-if="photos.length === 0">
+		Loading...
+	</div>
+</div>
+<script src="curiosity.js"></script>
+</body>
 </html>

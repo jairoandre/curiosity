@@ -1,0 +1,3 @@
+nasa.api:
+  key: ${NASA_API_KEY:AOY1JmnKuMubwVpC2PpP0xtCwf4UaQLLZkG9PpB6}
+  url: https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity

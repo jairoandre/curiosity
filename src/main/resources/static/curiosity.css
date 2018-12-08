@@ -1,3 +1,12 @@
 body { 
 	font-family: Ubuntu, sans-serif; 
 }
+#mars-report {
+    position: absolute;
+    top: 30px;
+}
+#nasa-pic {
+    position: absolute;
+    left: 600px;
+    top: 30px;
+}

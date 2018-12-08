@@ -7,8 +7,10 @@ import com.fountainledge.curiosity.model.WeatherReport;
 
 public interface CuriosityService {
     
-    public MarsReport getLatestMarsReport();
+    MarsReport getLatestMarsReport();
     
-    public List<WeatherReport> getLatestWeatherReports();
+    List<WeatherReport> getLatestWeatherReports();
+
+    WeatherReport getByTerrestrialDate(String date);
     
 }
